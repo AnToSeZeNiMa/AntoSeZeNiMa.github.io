@@ -1,0 +1,204 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0a192f; /* Azul oscuro */
+    color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #003399 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff !important;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #ffffff !important;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff;
+}
+
+/* Sección: Quiénes Somos */
+.container {
+    max-width: 1200px;
+}
+
+h2 {
+    color: #00aaff;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgba(0, 170, 255, 0.8);
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Animación de Fade-In */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Misión y Visión */
+.mision-vision {
+    background: linear-gradient(135deg, #001f3f 0%, #003366 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 170, 255, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.mision-vision:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 170, 255, 1);
+}
+
+/* Formación */
+.nuestra-formacion {
+    background: linear-gradient(135deg, #002244, #0055aa);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.nuestra-formacion:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 25px rgba(0, 170, 255, 0.9);
+}
+
+/* Animación de Zoom y Brillo en las imágenes del equipo */
+.equipo-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    filter: brightness(90%);
+}
+
+.equipo-img:hover {
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0px 0px 25px rgba(0, 170, 255, 1);
+    filter: brightness(110%);
+}
+
+/* Bordes de color neón para cada miembro */
+.equipo-img.azul {
+    border: 5px solid #00aaff;
+    box-shadow: 0px 0px 15px #00aaff;
+}
+.equipo-img.rojo {
+    border: 5px solid #ff0000;
+    box-shadow: 0px 0px 15px #ff0000;
+}
+.equipo-img.negro {
+    border: 5px solid #ffffff;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+/* Botones con efecto neón */
+.btn {
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    animation: neon-border 1.5s infinite alternate;
+}
+
+@keyframes neon-border {
+    from {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+    }
+}
+
+.btn-info {
+    background: #00aaff;
+    color: #ffffff;
+}
+
+.btn-info:hover {
+    background: #0088cc;
+    box-shadow: 0px 0px 15px #00aaff;
+}
+
+.btn-danger {
+    background: #ff0000;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background: #cc0000;
+    box-shadow: 0px 0px 15px #ff0000;
+}
+
+.btn-dark {
+    background: #000000;
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    background: #333333;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
+/* Footer */
+footer {
+    background: #001f3f;
+    color: white;
+    font-size: 1rem;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px -5px 15px rgba(0, 170, 255, 0.3);
+}
+
+footer p {
+    margin: 0;
+    text-shadow: 0px 0px 10px rgba(0, 170, 255, 0.8);
+}

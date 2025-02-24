@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7fc;
+    color: #002244;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #003399 !important; /* Azul rey */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: #ffffff !important;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 74, 173, 0.9), rgba(0, 120, 255, 0.9)), url('/assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Texto principal del hero */
+.hero h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    padding: 20px;
+    background: rgba(0, 0, 50, 0.7);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Botones */
+.hero .btn {
+    background: #ffffff;
+    color: #004aad;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #f0f8ff;
+    color: #00aaff;
+}
+
+/* Features */
+.feature-box {
+    padding: 20px;
+    background: #e6f0ff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    background: #d0e0ff;
+}
+
+.feature-icon {
+    width: 80px;
+}
+
+/* Footer */
+footer {
+    background: #002244;
+    color: white;
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
